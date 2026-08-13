@@ -1,8 +1,9 @@
 body {
- background-color: #ecfaf2;
+  background-color: #ecfaf2;
   color: #333;
   line-height: 1.6;
 }
+
 /* Header */
 header {
   display: flex;
@@ -13,10 +14,13 @@ header {
   color: #fff;
   position: sticky;
   top: 0;
+  z-index: 1000; /* បន្ថែម z-index កុំឱ្យបាត់នៅក្រោម element ផ្សេង */
 }
-.logo h2{
-    font-size: 28px;
+
+.logo h2 {
+  font-size: 28px;
 }
+
 header nav a {
   color: #faf8f3;
   text-decoration: none;
@@ -27,88 +31,118 @@ nav a:hover,
 nav .active {
   color: #ffcc80;
 }
-/* Receipt */
+
+/* 🧾 Receipt (កែសម្រួលត្រង់នេះឱ្យស្អាត) */
 .receipt {
-    height: 70vh;
-    margin-top: 100px;
-    width: 400px;
-    margin: auto;
-    padding: 20px;
-    background-color: rgb(229, 217, 225);
-    border: 1px solid black;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;         /* ប្តូរពី width មក max-width ដើម្បីកុំឱ្យហៀរលើទូរស័ព្ទ */
+  width: 90%;               /* ឱ្យទំហំសមស្របតាមអេក្រង់ */
+  margin: 60px auto;        /* ដាក់ margin លើក្រោមឱ្យមានគម្លាតស្អាត */
+  padding: 30px;            /* បង្កើន padding បន្តិច */
+  background-color: rgb(229, 217, 225);
+  border: 1px solid black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;   /* បង្ការកុំឱ្យ padding រុញទំហំប្រអប់ */
 }
+
 .receipt-box {
   background-color: #fff;
-  padding: 30px 50px;       /* បន្ថែម padding ឲ្យធំ */
+  padding: 20px;            /* តម្រូវ padding ឱ្យសមល្មម */
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   text-align: left;
-  font-size: 20px;          /* បង្កើនទំហំអក្សរ */
-  line-height: 1.6;         /* ឲ្យ spacing ស្រួលភ្នែក */
+  font-size: 18px;          
+  line-height: 1.6;         
+  box-sizing: border-box;
 }
 
 /* Title */
 .title {
-    
-    text-align: center;
-    margin-bottom: 15px;
-    color: rgb(190, 10, 10);
+  text-align: center;
+  margin-bottom: 15px;
+  color: rgb(190, 10, 10);
 }
+
 /* Line */
 hr {
-    border: none;
-    border-top: 1px dashed rgb(190, 10, 10);
-    margin: 10px 0;
+  border: none;
+  border-top: 1px dashed rgb(190, 10, 10);
+  margin: 10px 0;
 }
+
 /* Order item */
 .item {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
+
 .item-name {
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
+
+/* 🍎 បន្ថែម Style ឱ្យឈ្មោះផ្លែឈើចេញអក្សរធំខាងដើមពាក្យ និងបាត់ចំណុចខ្មៅ */
+.receipt-box ul {
+  padding-left: 20px;
+}
+
+.receipt-box li {
+  text-transform: capitalize; 
+  margin-bottom: 8px;
+}
+
 /* Summary row */
 .row {
-    display: flex;
-    justify-content: space-between;
-    margin: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
 }
+
 /* Total */
 .total {
-    font-weight: bold;
-
-    font-size: 18px;
+  font-weight: bold;
+  font-size: 18px;
 }
+
 /* Payment */
 .payment {
-    margin-top: 15px;
+  margin-top: 15px;
 }
+
 /* Thank you */
 .thank {
-    color: rgb(1, 13, 4);
-    text-align: center;
-    margin-top: 20px;
+  color: rgb(1, 13, 4);
+  text-align: center;
+  margin-top: 20px;
 }
+
 .thank h3 {
-    margin-bottom: 5px;
-    color: rgb(206, 24, 11);
+  margin-bottom: 5px;
+  color: rgb(206, 24, 11);
 }
+
 footer {
   background-color: #1A472A;
   color: #fff;
   text-align: center;
   padding: 15px;
-  margin-top: 30px;
-  text-align: center;
+  margin-top: 40px;
 }
+
+/* 📱 Responsive Mobile */
 @media (max-width: 768px) {
-  /* ១. រៀបចំ Header ឱ្យមានរបៀប និងចំកណ្ដាល */
   header {
     flex-direction: column;
     gap: 12px;
     padding: 15px;
     text-align: center;
+  }
+  
+  .receipt {
+    margin: 30px auto; /* បន្ថយគម្លាតលើក្រោមពេលនៅលើទូរស័ព្ទ */
+    padding: 15px;
+  }
+  
+  .receipt-box {
+    padding: 15px;
+    font-size: 16px; /* បន្ថយទំហំអក្សរបន្តិចលើអេក្រង់តូច */
   }
 }
