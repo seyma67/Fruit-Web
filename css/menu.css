@@ -23,9 +23,9 @@ header {
 nav a {
   color: aliceblue;
   text-decoration: none;
-  margin-left: 25px;
+  margin-left: 0;
   font-size: 18px;
-  transition: 3s;
+  transition:​ 0.3s;
 }
 
 nav a:hover, 
@@ -263,4 +263,13 @@ footer {
   padding: 15px;
   margin-top: 30px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  /* ១. រៀបចំ Header ឱ្យមានរបៀប និងចំកណ្ដាល */
+  header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    text-align: center;
+  }
 }
