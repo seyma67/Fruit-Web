@@ -1,42 +1,26 @@
-* {
-    box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
 body {
-    margin: 0;
-    background-color: #ecfaf2;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* កម្ពស់ទាំងអស់នៃអេក្រង់ */
-    margin: 0;
+ background-color: #ecfaf2;
+  color: #333;
+  line-height: 1.6;
 }
-/* =========================
-   Header
-========================= */
+/* Header */
 header {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-    background: rgb(60, 167, 60);
-    color: white;
-    margin-bottom: 30px;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgb(60, 167, 60);
+  color: #fff;
+  position: sticky;
+  top: 0;
 }
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
+.logo h2{
+    font-size: 28px;
 }
-nav a {
-  color: aliceblue;
+header nav a {
+  color: #faf8f3;
   text-decoration: none;
-  margin-left: 25px;
-  font-size: 18px;
-  transition: 3s;
+  margin: 0 15px;
 }
 
 nav a:hover, 
