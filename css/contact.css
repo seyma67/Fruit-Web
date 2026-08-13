@@ -32,8 +32,9 @@ nav .active {
    Contact Title
 ========================= */
 .contact-title {
+    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 145px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,9 +43,11 @@ nav .active {
 
 
 .contact-title h1 {
-    margin: 0;
-    font-size: 30px;
-    color: #292929;
+    text-align: center;
+        padding: 20px;
+        margin: 0;
+        font-size: 20px;
+        color: #050505;
 }
 
 
@@ -53,7 +56,7 @@ nav .active {
 ========================= */
 
 .contact-container {
-    width: 385px;
+    width: 400px;
     margin: 17px auto;
     padding: 25px;
     background-color: white;
@@ -75,10 +78,10 @@ nav .active {
     font-family: Arial, sans-serif;
 }
 #contactForm input {
-    height: 32px;
+    height: 40px;
 }
 #contactForm textarea {
-    height: 200px;
+    height: 560px;
     resize: vertical;
 }
 #contactForm input:focus,
