@@ -81,7 +81,7 @@ nav .active {
     height: 40px;
 }
 #contactForm textarea {
-    height: 560px;
+    height: 400px;
     resize: vertical;
 }
 #contactForm input:focus,
