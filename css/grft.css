@@ -1,10 +1,9 @@
 body {
-  background-color: #ecfaf2;
+ background-color: #ecfaf2;
   color: #333;
   line-height: 1.6;
 }
-
-/*=======Header=======*/
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -18,16 +17,10 @@ header {
 .logo h2{
     font-size: 28px;
 }
-
-nav a {
-
-  color: aliceblue;
+header nav a {
+  color: #faf8f3;
   text-decoration: none;
-  margin-left: 25px;
-  font-size: 18px;
-  transition: 3s;
-
-
+  margin: 0 15px;
 }
 
 nav a:hover,
