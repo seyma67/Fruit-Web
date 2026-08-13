@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h2><i class="fa-solid fa-apple-whole"></i> Natural fruits</h2>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="contact.html">cantace</a>
+        </nav>
+    </header>
+
+    <!-- ======= Hero Sectionn ========= -->
+    <section class="hero">
+        <h1>Our Fruit Menu</h1>
+        <p>Discover fresh fruits by category – Citrus, Tropical, Berries, and more</p>
+    </section>
+    <!-- ============= Search============== -->
+    <section class="search-section">
+        <input type="text" id="search" placeholder="search-fruit..." onkeyup="searchfruit()">
+
+
+        <div class="category-bar">
+            <a href="menu.html" class="tab ">ALL</a>
+            <a href="premium.html" class="tab">Premium</a>
+            <a href="popular.html" class="tab  active">Popular</a>
+            <a href="gift.html" class="tab">Fruit Gift</a>
+            <a href="promotion.html" class="tab ">Promotion</a>
+        </div>
+
+    <section class="order-info">
+        <h3>
+            🛒 Total order
+            <span id="totalOrder">0</span>
+        </h3>
+        <p id="message">Welcome! Choose your favorite fruits.</p>
+    </section>
+    <section class="menu-container">
+
+        <!-- crad1 -->
+        <div class="card">
+        <img src="img/orange2.jpg" alt="">
+        <h2>orange</h2>
+        <p class="description">
+          Citrus rich in Vitamin C.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.00 / kg</span></h3>
+          <button onclick="orderfurit('orange')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+        <!-- crad2 -->
+        <div class="card">
+        <img src="img/durian.jpg" alt="">
+        <h2>durian</h2>
+        <p class="description">
+          Sweet, orange autumn tomato-like fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$10.00 / kg</span></h3>
+          <button onclick="orderfurit('durian')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <!-- crad4 -->
+      <div class="card">
+        <img src="img/lychee.jpg" alt="">
+        <h2>lychee</h2>
+        <p class="description">
+          Sweet, translucent Asian fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$5.00 / kg</span></h3>
+          <button onclick="orderfurit('lychee')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+        <!-- crad4 -->
+       <div class="card">
+        <img src="img/kiwi2.jpg" alt="">
+        <h2>kiwi</h2>
+        <p class="description">
+          Fuzzy brown skin, green flesh.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$6.00 / kg</span></h3>
+          <button onclick="orderfurit('kiwi')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+        <!-- crad5 -->
+       <div class="card">
+        <img src="img/pomegranate.jpg" alt="">
+        <h2>pomegranate</h2>
+        <p class="description">
+          Thick skin packing juicy arils.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$5.00 / kg</span></h3>
+          <button onclick="orderfurit('pomegranate')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+        <!-- crad6 -->
+           <div class="card">
+        <img src="img/cheery1.jpg" alt="">
+        <h2>cherry</h2>
+        <p class="description">
+          Small, round deep-red fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$9.00 / kg</span></h3>
+          <button onclick="orderfurit('cherry')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+       </section>
+       <script src="js/gift.js"></script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Coffee House</p>
+  </footer>
+</body>
+</html>

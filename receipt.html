@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receipt</title>
+  <link rel="stylesheet" href="css/receipt.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h2><i class="fa-solid fa-apple-whole"></i> Natural fruits</h2>
+    </div>
+     <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="contact.html">Contact</a>
+
+    </nav>
+  </header>
+
+  <div class="receipt">
+
+    <h2 class="title">RECEIPTIFY</h2>
+    <p>ORDER SUMMARY</p>
+    <hr>
+    <!-- Order list -->
+    <ul id="orderList"></ul>
+    <hr>
+
+    <!-- Summary -->
+    <p>ITEM COUNT: <span id="itemCount"></span></p>
+    <p>Subtotal: <span id="subtotal"></span></p>
+    <p>Discount: <span id="discount"></span></p>
+    <p>Total: <span id="total"></span></p>
+    <ul id="orderList"></ul>
+
+    <hr>
+    <!-- Payment -->
+    <p>CARD: **** **** **** 4321</p>
+    <p>AUTH CODE: 654321</p>
+    <p>STATUS: PAID</p>
+    <hr>
+
+    <div class="thank">
+      <h3>THANK YOU!</h3>
+      <p>PLEASE COME AGAIN</p>
+    </div>
+
+  </div>
+  <script src="js/receipt.js"></script>
+
+  <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Natural fruits</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+body {
+  background-color: #ecfaf2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/*=======Header=======*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgb(60, 167, 60);
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.logo h2 {
+  font-size: 28px;
+}
+
+nav a {
+  color: aliceblue;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 18px;
+  transition: 3s;
+}
+
+nav a:hover, 
+nav .active {
+  color: #ffcc80;
+}
+/* ===== Hero Section ===== */
+.hero {
+  padding: 80px 20px;
+  background-size: cover; /* រូបពេញ */
+  background-position: center;/* រូបនៅកណ្តាល */
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #171515ba;
+  max-width: 100%;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* ===== Search Section ===== */
+.search-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.search-section input {
+  width: 350px;
+  max-width: 90%;
+  padding: 14px;
+  border-radius: 30px;
+  outline: none;
+  text-align: center;
+  border: 2px solid #443b3a;
+}
+.contact-btn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: #037930;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.contact-btn:hover {
+  background: #ef7a0d;
+}
+
+.category-bar {
+  display: flex;
+  justify-content: center; /* ដាក់ចំកណ្ដាល */
+  align-items: center;
+  flex-wrap: wrap; /* បើមានច្រើន tab អាចចុះជួរ */
+  gap: 15px;
+  padding: 15px 20px;
+  border-radius: 30px; /* បន្ថែមរាងមូលស្អាត */
+  margin: 20px auto; /* ចំកណ្ដាល container */
+  max-width: 90%;/* កុំឲ្យវាលែងច្រើនពេក */
+  
+}
+.category-bar a {
+  background: #fff;
+  border: 2px solid #f4b400;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.category-bar a.active {
+  background: #f4b400;/* ពណ៌លឿង */
+  
+  color: #fff; /* អក្សរពណ៌ស */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.category-bar a:hover {
+  background: #f4b400;
+  color: #fff;
+}
+.tab {
+  background: #fff;
+  border: 2px solid #f4b400;
+  border-radius: 25px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.3s ease;
+}
+.tab.active {
+  background: #f4b400;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.tab:hover {
+  background: #f4b400;
+  color: #fff;
+}
+/* ===== Order Info ===== */
+.order-info {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;/* កណ្តាលទំព័រ */
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  text-align: center; /* អក្សរនៅកណ្តាល */
+
+}
+.order-info h3 {
+  color: #3e2723;
+  margin-bottom: 10px;
+}
+#message {
+  font-size: 1rem;
+  color: #666;
+}
+/* ===== Menu Cards ===== */
+.menu-container {
+
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding-bottom: 60px;
+}
+
+.card {
+  position: relative;/* អាចដាក់ badge នៅលើរូប */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 1s;
+  text-align: center;
+  justify-content: space-between;
+  min-height: 320px; /* ធានាថាមានកម្ពស់ស្មើគ្នា */
+  
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;/* បង្ខំឲ្យរូបភាពមានកម្ពស់ដូចគ្នា */
+  object-fit: cover;/* កាត់/បង្រួមឲ្យស្អាត */
+  display: block;
+}
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e63946;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 50%;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 15px;
+  color: #3e2723;
+}
+
+.description {
+  margin: 10px 20px;
+  color: rgb(84, 82, 57);
+  font-size: 15px;
+}
+
+.rating {
+  color: rgb(113, 50, 50);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: brown;
+  margin-bottom: 15px;
+}
+.card h3 del {
+  color: #e10b0b;
+  margin-right: 5px;
+}
+button {
+  margin-left: 6px;
+  padding: 2px 8px;
+  background: white;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button {
+  width: 80%;
+  margin: auto auto 15px auto; /* ប៊ូតុងនៅខាងក្រោម */
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: #023551;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  
+}
+.card button:hover {
+  background: brown;
+}
+footer {
+  background-color: #1A472A;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  text-align: center;
+}

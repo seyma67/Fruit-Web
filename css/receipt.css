@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    margin: 0;
+    background-color: #ecfaf2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* កម្ពស់ទាំងអស់នៃអេក្រង់ */
+    margin: 0;
+}
+/* =========================
+   Header
+========================= */
+header {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: rgb(60, 167, 60);
+    color: white;
+    margin-bottom: 30px;
+    
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+nav a {
+  color: aliceblue;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 18px;
+  transition: 3s;
+}
+
+nav a:hover, 
+nav .active {
+  color: #ffcc80;
+}
+/* Receipt */
+.receipt {
+    height: 70vh;
+    margin-top: 100px;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(229, 217, 225);
+    border: 1px solid black;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.receipt-box {
+  background-color: #fff;
+  padding: 30px 50px;       /* បន្ថែម padding ឲ្យធំ */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: left;
+  font-size: 20px;          /* បង្កើនទំហំអក្សរ */
+  line-height: 1.6;         /* ឲ្យ spacing ស្រួលភ្នែក */
+}
+
+/* Title */
+.title {
+    
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(190, 10, 10);
+}
+/* Line */
+hr {
+    border: none;
+    border-top: 1px dashed rgb(190, 10, 10);
+    margin: 10px 0;
+}
+/* Order item */
+.item {
+    margin-bottom: 15px;
+}
+.item-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* Summary row */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+}
+/* Total */
+.total {
+    font-weight: bold;
+
+    font-size: 18px;
+}
+/* Payment */
+.payment {
+    margin-top: 15px;
+}
+/* Thank you */
+.thank {
+    color: rgb(1, 13, 4);
+    text-align: center;
+    margin-top: 20px;
+}
+.thank h3 {
+    margin-bottom: 5px;
+    color: rgb(206, 24, 11);
+}
+footer {
+  background-color: #1A472A;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  text-align: center;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Css/premium.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h2><i class="fa-solid fa-apple-whole"></i> Natural fruits</h2>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="contact.html">cantace</a>
+    </nav>
+  </header>
+
+  <!-- ======= Hero Sectionn ========= -->
+  <section class="hero">
+    <h1>Our Fruit Menu</h1>
+    <p>Discover fresh fruits by category – Citrus, Tropical, Berries, and more</p>
+  </section>
+  <!-- ============= Search============== -->
+  <section class="search-section">
+    <input type="text" id="search" placeholder="search-fruit..." onkeyup="searchfruit()">
+
+<div class="category-bar">
+  <a href="menu.html" class="tab ">ALL</a>
+  <a href="premium.html" class="tab active">Premium</a>
+  <a href="popular.html" class="tab">Popular</a>
+  <a href="gift.html" class="tab">Fruit Gift</a>
+  <a href="promotion.html" class="tab">Promotion</a>
+</div>
+
+    <section class="order-info">
+      <h3>
+        🛒 Total order
+        <span id="totalOrder">0</span>
+      </h3>
+      <p id="message">Welcome! Choose your favorite fruits.</p>
+    </section>
+    <section class="menu-container">
+
+      <div class="card">
+        <img src="img/durian.jpg" alt="">
+        <h2>durian</h2>
+        <p class="description">
+          Sweet, orange autumn tomato-like fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$10.00 / kg</span></h3>
+          <button onclick="orderfurit('durian')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/cheery1.jpg" alt="">
+       <h2>cherry</h2>
+        <p class="description">
+          Small, round deep-red fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$9.00 / kg</span></h3>
+          <button onclick="orderfurit('cherry')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/blueberry.jpg" alt="">
+        <h2>blueberry</h2>
+        <p class="description">
+          Small, antioxidant-rich blue berry.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$8.50 / kg</span></h3>
+          <button onclick="orderfurit('blueberry')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/raspberry.jpg" alt="">
+        <h2>raspberry</h2>
+        <p class="description">
+          Delicate, tart red berry.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$11.50 / kg</span></h3>
+          <button onclick="orderfurit('raspberry')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/blackberry.jpg" alt="">
+        <h2>blackberry</h2>
+        <p class="description">
+          Dark, plump aggregate fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$10.50 / kg</span></h3>
+          <button onclick="orderfurit('blackberry')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/cranberry.jpg" alt="">
+        <h2>cranberry</h2>
+        <p class="description">
+          Tart, red health-boosting berry.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$7.00 / kg</span></h3>
+          <button onclick="orderfurit('cranberry')">
+            Order Now
+          </button>
+        </div>
+      </div>
+  
+      </section>
+      
+    <script src="js/premium.js"></script>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Natural fruits</p>
+    </footer>
+</body>
+</html>

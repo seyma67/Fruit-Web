@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Css/menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  
+  <header>
+    <div class="logo">
+    <h2><i class="fa-solid fa-apple-whole"></i> Natural fruits</h2>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="contact.html">cantace</a>
+    </nav>
+  </header>
+
+  <!-- ======= Hero Sectionn ========= -->
+  <section class="hero">
+    <h1>Our Fruit Menu</h1>
+    <p>Discover fresh fruits by category – Citrus, Tropical, Berries, and more</p>
+  </section>
+  <!-- ============= Search============== -->
+  <section class="search-section">
+    <input type="text" id="search" placeholder="search-fruit..." onkeyup="searchfruit()">
+
+
+  <div class="category-bar">
+    <a href="menu.html" class="tab active">ALL</a>
+    <a href="premium.html" class="tab">Premium</a>
+    <a href="popular.html" class="tab">Popular</a>
+    <a href="gift.html" class="tab ">Fruit Gift</a>
+    <a href="promotion.html" class="tab">Promotion</a>
+  </div>
+
+    <section class="order-info">
+      <h3>
+        🛒 Total order
+        <span id="totalOrder">0</span>
+      </h3>
+      <p id="message">Welcome! Choose your favorite fruits.</p>
+    </section>
+    <section class="menu-container">
+
+      <!-- crad1 -->
+      <div class="card" data-category="ALL">
+        <img src="img/strawberry.jpg" alt="fruits">
+        <h2>strawberry</h2>
+        <p class="description">
+          Bright red, sweet berry.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$6.00 / kg</span></h3>
+          <button onclick="orderfurit('strawberry')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <!-- crad2 -->
+      <div class="card">
+        <img src="img/orange2.jpg" alt="">
+        <h2>orange</h2>
+        <p class="description">
+          Citrus rich in Vitamin C.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.00 / kg</span></h3>
+          <button onclick="orderfurit('orange')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <!-- crad3 -->
+      <div class="card">
+        <img src="img/durian.jpg" alt="">
+        <h2>durian</h2>
+        <p class="description">
+          Sweet, orange autumn tomato-like fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$10.00 / kg</span></h3>
+          <button onclick="orderfurit('durian')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <!-- crad4 -->
+      <div class="card">
+        <img src="img/lychee.jpg" alt="">
+        <h2>lychee</h2>
+        <p class="description">
+          Sweet, translucent Asian fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$5.00 / kg</span></h3>
+          <button onclick="orderfurit('lychee')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <!-- crad5 -->
+      <div class="card">
+        <img src="img/kiwi2.jpg" alt="">
+        <h2>kiwi</h2>
+        <p class="description">
+          Fuzzy brown skin, green flesh.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$6.00 / kg</span></h3>
+          <button onclick="orderfurit('kiwi')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <!-- crad6 -->
+      <div class="card">
+        <img src="img/cheery1.jpg" alt="">
+        <h2>cherry</h2>
+        <p class="description">
+          Small, round deep-red fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$9.00 / kg</span></h3>
+          <button onclick="orderfurit('cherry')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+       <!-- crad7 -->
+      <div class="card">
+        <img src="img/mango1.jpg" alt="">
+        <h2>mango</h2>
+        <p class="description">
+          Sweet, tropical stone fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$2.00 / kg</span></h3>
+          <button onclick="orderfurit('mango')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+       <!-- crad7 -->
+      <div class="card">
+        <img src="img/melone1.jpg" alt="">
+        <h2>melon</h2>
+        <p class="description">
+          Sour yellow citrus fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><del>$4.50</del><span>$2.50 / kg</span></h3>
+          <button onclick="orderfurit('melon')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+    <div class="card">
+        <img src="img/papaya1.jpg" alt="">
+        <h2>papaya</h2>
+        <p class="description">
+          Orange-fleshed tropical fruit with seeds.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><del>$3.50</del><span>$1.50 / kg</span></h3>
+          <button onclick="orderfurit('papaya')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/lemons1.jpg" alt="">
+        <h2>lemons</h2>
+        <p class="description">
+          Sour yellow citrus fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$2.50 / kg</span></h3>
+          <button onclick="orderfurit('lemons')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/pineaapple1.jpg" alt="">
+        <h2>pineaapple</h2>
+        <p class="description">
+          Spiky, tropical bromeliad fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$1.50 / kg</span></h3>
+          <button onclick="orderfurit('cherrypineaapple')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/mengogreen2.jpg" alt="">
+        <h2>mengogreen</h2>
+        <p class="description">
+          it’s raw mango or a juicy ripe mango,
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$1.50 / kg</span></h3>
+          <button onclick="orderfurit('mengogreen')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/appleread1.webp" alt="">
+        <h2>apple</h2>
+        <p class="description">
+          Crisp tree fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.00 / kg</span></h3>
+          <button onclick="orderfurit('apple')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/applegreen2.webp" alt="">
+        <h2>apple-green</h2>
+        <p class="description">
+          Crisp tree fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.00 / kg</span></h3>
+          <button onclick="orderfurit('apple-green')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/peach1.jpg" alt="">
+        <h2>peach</h2>
+        <p class="description">
+          Fuzzy-skinned sweet stone fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$4.00 / kg</span></h3>
+          <button onclick="orderfurit('peach')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/pear1.jpg" alt="">
+        <h2>pear</h2>
+        <p class="description">
+          Sweet, bell-shaped orchard fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.50 / kg</span></h3>
+          <button onclick="orderfurit('pear')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/pearred.jpg" alt="">
+        <h2>pear-red</h2>
+        <p class="description">
+          Sweet, bell-shaped orchard fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.50 / kg</span></h3>
+          <button onclick="orderfurit('pear-red')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/avocado2.jpg" alt="">
+        <h2>avocado</h2>
+        <p class="description">
+          Savory, high-fat green fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.00 / kg</span></h3>
+          <button onclick="orderfurit('appleavocado')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/dragonR.jpg" alt="">
+        <h2>dragonRed</h2>
+        <p class="description">
+          Vibrant, speckled tropical cactus fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$2.50 / kg</span></h3>
+          <button onclick="orderfurit('dragonRed')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/dragonY.jpg" alt="">
+        <h2>dragonwhite</h2>
+        <p class="description">
+          Savory, high-fat green fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$2.50 / kg</span></h3>
+          <button onclick="orderfurit('dragonwhite')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/whtermelon1.jpg" alt="">
+        <h2>whtermelon</h2>
+        <p class="description">
+          Large, hydrating summer fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><del>$4.50</del><span>$1.50 / kg</span></h3>
+          <button onclick="orderfurit('whtermelon')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+       <div class="card">
+        <img src="img/whtermelon3.jpg" alt="">
+        <h2>whtermelon yellow</h2>
+        <p class="description">
+          Large, hydrating summer fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><del>$4.50</del><span>$1.50 / kg</span></h3>
+          <button onclick="orderfurit('whtermelon yellow')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/banana2.jpg" alt="">
+        <h2>banana</h2>
+        <p class="description">
+          High-potassium yellow fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><del>$3.50</del><span>$1.50 / kg</span></h3>
+          <button onclick="orderfurit('banana')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/guava2.jpg" alt="">
+        <h2>guava</h2>
+        <p class="description">
+          Fragrant tropical pink
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$1.50 / kg</span></h3>
+          <button onclick="orderfurit('guava')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/blueberry.jpg" alt="">
+        <h2>blueberry</h2>
+        <p class="description">
+          Small, antioxidant-rich blue berry.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$8.50 / kg</span></h3>
+          <button onclick="orderfurit('blueberry')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/raspberry.jpg" alt="">
+        <h2>raspberry</h2>
+        <p class="description">
+          Delicate, tart red berry.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$11.50 / kg</span></h3>
+          <button onclick="orderfurit('raspberry')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/blackberry.jpg" alt="">
+        <h2>blackberry</h2>
+        <p class="description">
+          Dark, plump aggregate fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$10.50 / kg</span></h3>
+          <button onclick="orderfurit('blackberry')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/cranberry.jpg" alt="">
+        <h2>cranberry</h2>
+        <p class="description">
+          Tart, red health-boosting berry.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$7.00 / kg</span></h3>
+          <button onclick="orderfurit('cranberry')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/plam.jpg" alt="">
+        <h2>plam</h2>
+        <p class="description">
+          Smooth-skinned, juicy stone fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><del>$4.50</del><span>$3.50 / kg</span></h3>
+          <button onclick="orderfurit('plam')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/date.jpg" alt="">
+        <h2>date</h2>
+        <p class="description">
+          Sweet, chewy desert fruit
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$10.00 / kg</span></h3>
+          <button onclick="orderfurit('date')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/passion1.jpg" alt="">
+        <h2>passion</h2>
+        <p class="description">
+          Tart, seed-filled tropical fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$5.50 / kg</span></h3>
+          <button onclick="orderfurit('passion')">
+            Order Now
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/pomegranate.jpg" alt="">
+        <h2>pomegranate</h2>
+        <p class="description">
+          Thick skin packing juicy arils.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$5.00 / kg</span></h3>
+          <button onclick="orderfurit('pomegranate')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/jackfruit.jpg" alt="">
+        <h2>jackfruit</h2>
+        <p class="description">
+          Massive, sweet tropical tree fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$2.00 / kg</span></h3>
+          <button onclick="orderfurit('jackfruit')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/strar fruit.jpg" alt="">
+        <h2>starfruit</h2>
+        <p class="description">
+          Sweet, chewy desert fruit
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$4.50 / kg</span></h3>
+          <button onclick="orderfurit('starfruit')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/rembutan.jpg" alt="">
+        <h2>rembutan</h2>
+        <p class="description">
+          Spiky red shell with sweet, translucent white flesh.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.50 / kg</span></h3>
+          <button onclick="orderfurit('rembutan')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/mangosteen.jpg" alt="">
+        <h2>mangosteen</h2>
+        <p class="description">
+          Deep purple rind covering exquisite, sweet, tangy white segments.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$5.50 / kg</span></h3>
+          <button onclick="orderfurit('mangosteen')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/quince.jpg" alt="">
+        <h2>quince</h2>
+        <p class="description">
+          Hard, yellow, highly fragrant fruit that becomes sweet when cooked.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$2.50 / kg</span></h3>
+          <button onclick="orderfurit('quince')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/soursop.jpg" alt="">
+        <h2>soursop</h2>
+        <p class="description">
+          Spiky green tropical fruit with sweet, citrusy, custard-like pulp.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$5.50 / kg</span></h3>
+          <button onclick="orderfurit('soursop')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/cherimoya.webp" alt="">
+        <h2>cherimoya</h2>
+        <p class="description">
+          Green, scaly-skinned fruit offering a rich, sweet, tropical custard flesh.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$7.00 / kg</span></h3>
+          <button onclick="orderfurit('cherimoya')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/Longan.jpg" alt="">
+        <h2>Longan</h2>
+        <p class="description">
+          Thin brown shell protecting sweet, musky, translucent white flesh.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$4.00 / kg</span></h3>
+          <button onclick="orderfurit('Longan')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/Loquat.jpg" alt="">
+        <h2>Loquat</h2>
+        <p class="description">
+          Small, yellow-orange pomes with a sweet, tangy, apricot-like taste.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$4.50 / kg</span></h3>
+          <button onclick="orderfurit('Loquat')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/Feijoa.jpg" alt="">
+        <h2>Feijoa</h2>
+        <p class="description">
+          Green, oval fruit featuring a gritty, highly aromatic, sweet-sour center.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$5.00 / kg</span></h3>
+          <button onclick="orderfurit('Feijoa')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/Sapodilla.jpg" alt="">
+        <h2>Sapodilla</h2>
+        <p class="description">
+          Brown, grainy-skinned tropical fruit tasting like sweet brown sugar.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.00 / kg</span></h3>
+          <button onclick="orderfurit('Sapodilla')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/calamansi.jpg" alt="">
+        <h2>calamansi</h2>
+        <p class="description">
+          Small, extremely tart citrus fruit with a sweet, thin green-yellow rind.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$2.00 / kg</span></h3>
+          <button onclick="orderfurit('calamansi')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/grapes-red.webp" alt="">
+        <h2>grapes-red</h2>
+        <p class="description">
+          Small, sweet or tart round berries with deep crimson skin used for eating fresh or making wine.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3>$3.50 / kg</h3>
+          <button onclick="orderfurit('grapes-red')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/grapes-green.webp" alt="">
+        <h2>grapes-green</h2>
+        <p class="description">
+          Crisp, juicy oval berries with a translucent pale green skin and a refreshing, sweet flavor.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.50 / kg</span></h3>
+          <button onclick="orderfurit('grapes-green')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/grapes-popular.jpg" alt="">
+        <h2>grapes-popular</h2>
+        <p class="description">
+          Sweet, deeply flavored dark purple berries packed with antioxidants and a rich, robust juice.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.50 / kg</span></h3>
+          <button onclick="orderfurit('grapes-popular')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/persimmon.jpg" alt="">
+        <h2>persimmon</h2>
+        <p class="description">
+          Sweet, orange autumn tomato-like fruit.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.50 / kg</span></h3>
+          <button onclick="orderfurit('persimmon')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/Yellow Rose Apple.jpg" alt="">
+        <h2>Yellow-Rose-Apple</h2>
+        <p class="description">
+          Pale yellow, bell-shaped fruit with a glossy skin and a delicate, mildly sweet flavor.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.00 / kg</span></h3>
+          <button onclick="orderfurit('Yellow-Rose-Apple')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/White Rose Apple.jpg" alt="">
+        <h2>White-Rose-Apple</h2>
+        <p class="description">
+          Translucent white, spongy fruit known for its exceptionally refreshing and crisp bite.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.00 / kg</span></h3>
+          <button onclick="orderfurit('White-Rose-Apple')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/rose apple.jpg" alt="">
+        <h2>Red-Rose-Apple</h2>
+        <p class="description">
+          Bright crimson, bell-shaped fruit featuring a classic juicy, watery crunch.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.00 / kg</span></h3>
+          <button onclick="orderfurit('Red-Rose-Apple')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/Green Rose Apple.jpg" alt="">
+        <h2>Green-Rose-Apple</h2>
+        <p class="description">
+          Lime-green, smooth-skinned cultivar prized for its sweet, thirst-quenching qualities.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$3.00 / kg</span></h3>
+          <button onclick="orderfurit('Green-Rose-Apple')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/Palmyra palm fruit.webp" alt="">
+        <h2>Palmyra-palm-fruit</h2>
+        <p class="description">
+          Large, dark purple-green palm fruit containing sweet, translucent jelly-like seeds.
+        </p>
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$2.00 / kg</span></h3>
+          <button onclick="orderfurit('Palmyra-palm-fruit')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/Java plum.jpg" alt="">
+        <h2>Java-Plam</h2>
+        <p class="description">
+          Oblong, glossy black berry with a sharp sweet-sour taste that stains the tongue purple.
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$2.00 / kg</span></h3>
+          <button onclick="orderfurit('Java-Plam')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/Yellow Date.jpg" alt="">
+        <h2>Yellow-Date</h2>
+        <p class="description">
+          : Crisp, golden-yellow palm fruit with a crunchy, apple-like texture and a refreshing, honey-sweet flavor.
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$10.00 / kg</span></h3>
+          <button onclick="orderfurit('Yellow-Date')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/Green-Coconut.jpg" alt="">
+        <h2>Green-Coconut</h2>
+        <p class="description">
+          Large tropical drupe containing sweet, refreshing water and a tender, jelly-like meat.
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$1.50 / kg</span></h3>
+          <button onclick="orderfurit('Green-Coconut')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/langsat.webp" alt="">
+        <h2>langsat</h2>
+        <p class="description">
+          Small, round clusters of thin-skinned fruit with sweet, tangy, grape-like translucent segments.
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><del>$3.00</del><span>$2.00 / kg</span></h3>
+          <button onclick="orderfurit('langsat')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+    <div class="card">
+        <img src="img/Tomato.jpg" alt="">
+        <h2>Tomato</h2>
+        <p class="description">
+          Tiny, glossy red garden berry hanging in long clusters with an intensely sweet, sugary-tart juice
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><del>$4.50</del><span>$2.50 / kg</span></h3>
+          <button onclick="orderfurit('Tomato')">
+            Order Now
+          </button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="img/Fig.jpg" alt="">
+        <h2>Fig</h2>
+        <p class="description">
+          Sweet, chewy soft fruit.
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$5.50 / kg</span></h3>
+          <button onclick="orderfurit('Fig')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/kumquat.jpg" alt="">
+        <h2>kumquat</h2>
+        <p class="description">
+          Tiny, oval citrus eaten whole with a sweet edible rind.
+        <div class="rating">
+          ⭐️⭐️⭐️⭐️
+          <h3><span>$4.00 / kg</span></h3>
+          <button onclick="orderfurit('kumquat')">
+            Order Now
+          </button>
+        </div>
+      </div>
+
+    </section>
+    <script src="js/menu.js"></script>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Coffee House</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    margin: 0;
+    background-color: #ecfaf2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* កម្ពស់ទាំងអស់នៃអេក្រង់ */
+    margin: 0;
+}
+/* =========================
+   Header
+========================= */
+header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: rgb(60, 167, 60);
+    color: white;
+    margin-bottom: 30px;
+    
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+nav a {
+  color: aliceblue;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 18px;
+  transition: 3s;
+}
+
+nav a:hover, 
+nav .active {
+  background: #ef7a0d;
+}
+
+/* =========================
+   Contact Title
+========================= */
+.contact-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #81c582;
+}
+
+
+.contact-title h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #292929;
+}
+
+
+/* =========================
+   Contact Form
+========================= */
+
+.contact-container {
+    width: 385px;
+    margin: 17px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+#contactForm input {
+    height: 32px;
+}
+#contactForm textarea {
+    height: 200px;
+    resize: vertical;
+}
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: none;
+    border-color: #c2e222;
+}
+/* =========================
+   Send Button
+========================= */
+
+#contactForm button {
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+    background-color: #c6e132;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#contactForm button:hover {
+    background-color: #0bb108;
+}
+.map-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 8px;
+}
+footer {
+  background-color: #064420;   /* ពណ៌ខ្មៅបៃតង */
+  color: #fff;                 /* អក្សរពណ៌ស */
+  text-align: center;
+  padding: 15px;
+  position: fixed;             /* ជាប់នៅក្រោម */
+  bottom: 0;                   /* នៅចុងក្រោម */
+  left: 0;
+  width: 100%;                 /* ពេញទំហំទំព័រ */
+}
