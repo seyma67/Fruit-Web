@@ -78,7 +78,18 @@ hr {
   font-weight: bold;
   margin-bottom: 5px;
 }
+#orderList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
+/* កំណត់ឱ្យឈ្មោះផ្លែឈើនៅខាងឆ្វេង */
+#orderList .fruit-name {
+  width: 50%;
+  text-align: left;
+}
 /* 🍎 បន្ថែម Style ឱ្យឈ្មោះផ្លែឈើចេញអក្សរធំខាងដើមពាក្យ និងបាត់ចំណុចខ្មៅ */
 .receipt-box ul {
   padding-left: 20px;
